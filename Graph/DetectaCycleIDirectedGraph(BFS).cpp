@@ -3,7 +3,7 @@ public:
     bool isCyclic(int N, vector<int> adj[]) {
         vector<int> indegree(N, 0);
 
-        // Calculate indegree of each node
+        // Calculate indegree of each nodes
         for (int i = 0; i < N; i++) {
             for (auto it : adj[i]) {
                 indegree[it]++;
