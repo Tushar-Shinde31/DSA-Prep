@@ -10,7 +10,7 @@ public:
                     matrix[i][j] = 1e9;
 
                 if (i == j)
-                    matrix[i][j] = 0;  // Distance to self is 0
+                    matrix[i][j] = 0;  
             }
         }
 
