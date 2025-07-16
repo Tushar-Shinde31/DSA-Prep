@@ -1,7 +1,7 @@
 class Solution {
 public:
     int spanningTree(int V, vector<vector<int>> adj[]) {
-        // Min-heap: {weight, node}
+        // Min-heap
         priority_queue<pair<int, int>, vector<pair<int, int>>, greater<pair<int, int>>> pq;
 
         vector<int> vis(V, 0);  // Visited array
