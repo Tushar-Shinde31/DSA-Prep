@@ -21,9 +21,9 @@ public:
             vis[node] = 1;
             sum += wt;
 
-            for (auto edge : adj[node]) {
-                int adjNode = edge[0];
-                int edW = edge[1];
+            for (auto it : adj[node]) {
+                int adjNode = it[0];
+                int edW = it[1];
 
                 if (!vis[adjNode]) {
                     pq.push({edW, adjNode});
