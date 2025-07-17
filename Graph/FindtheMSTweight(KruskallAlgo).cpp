@@ -10,7 +10,7 @@ public:
                 int wt = it[1];
                 int node = i;
                 
-                // To avoid duplicate edges in undirected graph, only add if i < adjNode
+                // To avoid duplicate edges in undirected graph, only addd if i < adjNode
                 if (i < adjNode)
                     edges.push_back({wt, {node, adjNode}});
             }
@@ -64,6 +64,6 @@ public:
             }
         }
 
-        return mstWt;
+        return mstWt; 
     }
 };
