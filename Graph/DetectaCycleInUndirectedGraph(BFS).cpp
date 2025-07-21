@@ -26,7 +26,7 @@ class Solution {
 
 public:
     bool isCycle(int V, vector<int> adj[]) {
-        int vis[V] = {0};  // ✅ FIXED: lowercase `v` → `V`
+        int vis[V] = {0};  
         for (int i = 0; i < V; i++) {
             if (!vis[i]) {
                 if (detectCycle(i, adj, vis))  // ✅ FIXED: called `detectCycle` not `detect`
