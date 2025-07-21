@@ -29,10 +29,10 @@ public:
         int vis[V] = {0};  
         for (int i = 0; i < V; i++) {
             if (!vis[i]) {
-                if (detectCycle(i, adj, vis))  // ✅ FIXED: called `detectCycle` not `detect`
+                if (detectCycle(i, adj, vis))  
                     return true;
             }
         }
-        return false;  // ✅ Moved outside loop
+        return false;  
     }
 };
