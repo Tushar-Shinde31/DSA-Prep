@@ -9,14 +9,14 @@ class Solution {
 
         while (!q.empty()) {
             int node = q.front().first;
-            int parent = q.front().second;  // ✅ FIXED: q.front() instead of q.second()
+            int parent = q.front().second;  
             q.pop();
 
             for (auto adjacentNode : adj[node]) {
                 if (!vis[adjacentNode]) {
                     vis[adjacentNode] = 1;
                     q.push({adjacentNode, node});
-                } else if (adjacentNode != parent) { // ✅ FIXED: move inside `else`
+                } else if (adjacentNode != parent) { 
                     return true;
                 }
             }
