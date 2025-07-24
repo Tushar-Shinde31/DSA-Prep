@@ -18,5 +18,5 @@ int maxLen(int A[], int n)
         }   
     }
 
-    return maxi; 
+    return maxi;
 }
