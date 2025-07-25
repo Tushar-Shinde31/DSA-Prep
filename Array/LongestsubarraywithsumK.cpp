@@ -1,11 +1,9 @@
-#include <vector>
-#include <unordered_map>
-using namespace std;
+
 
 class Solution {
 public:
     int longestSubarray(vector<int> &nums, int k) {
-        unordered_map<int, int> prefixMap;  // prefixSum -> firstIndex
+        unordered_map<int, int> prefixMap;  
         int sum = 0;
         int maxLength = 0;
 
