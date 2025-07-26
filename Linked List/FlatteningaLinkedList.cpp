@@ -60,7 +60,6 @@ Node* flattenLinkedList(Node* head){
     }
 
     // Recursively flatten the
-    // rest of the linked list
     Node* mergedHead = flattenLinkedList(head->next);
     head = merge(head, mergedHead);
     return head;
