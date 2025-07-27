@@ -28,6 +28,6 @@ public:
     int minCut(string s) {
         int n = s.size();
         vector<int> dp(n, -1);
-        return solve(0, n, s, dp) - 1;  
+        return solve(0, n, s, dp) - 1;  // subtract 1 because last cut is not needed
     }
 };
