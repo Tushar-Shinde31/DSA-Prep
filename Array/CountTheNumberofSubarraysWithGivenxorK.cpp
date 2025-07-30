@@ -7,11 +7,8 @@ int subarraysWithXorK(vector<int> a, int k) {
         int xorr = 0;
         for (int j = i; j < n; j++) {
 
-            //step 2:calculate XOR of all
-            // elements:
             xorr = xorr ^ a[j];
 
-            // step 3:check XOR and count:
             if (xorr == k) cnt++;
         }
     }
