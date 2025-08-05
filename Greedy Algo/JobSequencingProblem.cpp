@@ -8,7 +8,7 @@ class Solution {
       bool static comparison(Job a, Job b) {
          return (a.profit > b.profit);
       }
-   //Function to find the maximum profit and the number of jobs done
+   
    pair < int, int > JobScheduling(Job arr[], int n) {
 
       sort(arr, arr + n, comparison);
