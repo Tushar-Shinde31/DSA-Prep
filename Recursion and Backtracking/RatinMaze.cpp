@@ -10,7 +10,7 @@ class Solution {
       return;
     }
 
-    // downward
+    // downward dir
     if (i + 1 < n && !vis[i + 1][j] && a[i + 1][j] == 1) {
       vis[i][j] = 1;
       findPathHelper(i + 1, j, a, n, ans, move + 'D', vis);
@@ -65,3 +65,4 @@ int main() {
   return 0;
 
 }
+
