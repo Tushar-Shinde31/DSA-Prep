@@ -1,7 +1,6 @@
 #include<bits/stdc++.h>
-
-
 using namespace std;
+
 int main() {
   int V = 49;
   vector < int > ans;
