@@ -2,7 +2,7 @@ class Solution {
 public:
     bool canWePlace(vector<int> &nums, int dist, int cows) {
         int last = nums[0];
-        int cntCows = 1; // Place first cow at first stall
+        int cntCows = 1; 
 
         for (int i = 1; i < nums.size(); i++) {
             if (nums[i] - last >= dist) {
