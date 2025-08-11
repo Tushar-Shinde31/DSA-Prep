@@ -4,7 +4,7 @@ using namespace std;
 class Solution {
 public:
     int upperBound(vector<int> &arr, int x, int n) {
-        int low = 0, high = n; // high = n (not n-1) to handle all elements <= x
+        int low = 0, high = n; 
         while (low < high) {
             int mid = (low + high) / 2;
             if (arr[mid] <= x)
