@@ -23,6 +23,6 @@ public:
                 high = mid;
             }
         }
-        return mid;  // returns double precision root
+        return mid;  
     }
 };
