@@ -4,9 +4,9 @@ public:
         vector<int> ans;
         if (!root) return ans;
 
-        map<int, int> mpp;
-        queue<pair<Node*, int>> q;
-        q.push({root, 0});
+        map<int, int> mpp; 
+        queue<pair<Node*, int>> q; 
+        q.push({root, 0}); 
 
         while (!q.empty()) {
             auto it = q.front();
@@ -14,8 +14,8 @@ public:
             Node* node = it.first;
             int line = it.second;
 
-            // If this is the first node for this line, insert it.
-            if (mpp.find(line) == mpp.end())
+            // insert only if this line hasn't been seen before
+            if (!mpp.count(line))
                 mpp[line] = node->data;
 
             if (node->left)
@@ -30,4 +30,3 @@ public:
         return ans;
     }
 };
-
