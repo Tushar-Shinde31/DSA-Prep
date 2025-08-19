@@ -14,6 +14,7 @@ public:
             Node* node = it.first;
             int line = it.second;
 
+            // If this is the first node for this line, insert it.
             if (mpp.find(line) == mpp.end())
                 mpp[line] = node->data;
 
@@ -29,3 +30,4 @@ public:
         return ans;
     }
 };
+
