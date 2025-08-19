@@ -1,19 +1,3 @@
-#include <iostream>
-#include <vector>
-#include <map>
-#include <queue>
-using namespace std;
-
-/**
- * Definition for a binary tree node.
- */
-struct TreeNode {
-    int data;
-    TreeNode *left;
-    TreeNode *right;
-    TreeNode(int val) : data(val), left(nullptr), right(nullptr) {}
-};
-
 class Solution {
   public:
     vector<int> bottomView(TreeNode *root) {
@@ -21,8 +5,8 @@ class Solution {
         if (root == NULL)
             return ans;
 
-        map<int, int> mpp; // horizontal distance -> node data
-        queue<pair<TreeNode*, int>> q; // node, horizontal distance
+        map<int, int> mpp; 
+        queue<pair<TreeNode*, int>> q;
 
         q.push({root, 0});
 
@@ -50,36 +34,3 @@ class Solution {
         return ans;
     }
 };
-
-int main() {
-    /*
-        Construct the following binary tree:
-                 20
-                /  \
-              8     22
-             / \      \
-            5   3      25
-               / \
-              10 14
-    */
-
-    TreeNode* root = new TreeNode(20);
-    root->left = new TreeNode(8);
-    root->right = new TreeNode(22);
-    root->left->left = new TreeNode(5);
-    root->left->right = new TreeNode(3);
-    root->right->right = new TreeNode(25);
-    root->left->right->left = new TreeNode(10);
-    root->left->right->right = new TreeNode(14);
-
-    Solution sol;
-    vector<int> result = sol.bottomView(root);
-
-    cout << "Bottom view of the binary tree is: ";
-    for (int val : result) {
-        cout << val << " ";
-    }
-    cout << endl;
-
-    return 0;
-}
