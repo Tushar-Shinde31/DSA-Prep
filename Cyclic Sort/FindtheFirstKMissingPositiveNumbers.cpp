@@ -1,3 +1,66 @@
+// Question:
+// 📌 Problem: Find the First K Missing Positive Numbers
+
+// You are given an unsorted integer array nums and an integer k.
+// Your task is to return the first k positive integers that are missing from the array.
+
+// Example 1
+
+// Input:
+
+// nums = [3, -1, 4, 5, 5]
+// k = 3
+
+
+// Output:
+
+// [1, 2, 6]
+
+
+// Explanation:
+
+// Numbers present in nums: 3, 4, 5
+
+// First missing positives: 1, 2, 6
+
+// Example 2
+
+// Input:
+
+// nums = [2, 3, 4]
+// k = 3
+
+
+// Output:
+
+// [1, 5, 6]
+
+
+// Explanation:
+
+// Numbers present: 2, 3, 4
+
+// Missing positives: 1, then after 4 → 5, 6
+
+// Example 3
+
+// Input:
+
+// nums = [-2, -3, 4]
+// k = 2
+
+
+// Output:
+
+// [1, 2]
+
+
+// Explanation:
+
+// Numbers present: 4
+
+// First missing positives: 1, 2
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -58,4 +121,5 @@ int main() {
 
     return 0;
 }
+
 
